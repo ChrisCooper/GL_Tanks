@@ -35,6 +35,7 @@
 		8DD76F6C0486A84900D96B5E /* Tanks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tanks; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF167BDF10A27F36006498A1 /* GlobalDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalDeclarations.h; sourceTree = "<group>"; };
 		BF167BEB10A2804F006498A1 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		BF3C07F01238144700882DDA /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		BF4F2BD710A29C97005FE7A0 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BF4F2E3310A2BE48005FE7A0 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		BF6214BA10A948EF002F4EBE /* Obstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obstacle.h; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		C6859E8C029090F304C91782 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				BF3C07F01238144700882DDA /* README.markdown */,
 				C6859E8B029090EE04C91782 /* Tanks.1 */,
 			);
 			name = Documentation;
