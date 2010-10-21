@@ -299,12 +299,12 @@ void drawScene() {
 	glEnable(GL_LIGHTING);
 	
 	
-	setOrthographicProjection();
-		glPushMatrix();
-			glLoadIdentity();
-			renderBitmapString(720,450,10,GLUT_BITMAP_HELVETICA_18,"Hello World!");
-		glPopMatrix();
-	resetPerspectiveProjection();
+//	setOrthographicProjection();
+//		glPushMatrix();
+//			glLoadIdentity();
+//			renderBitmapString(720,450,10,GLUT_BITMAP_HELVETICA_18,"Hello World!");
+//		glPopMatrix();
+//	resetPerspectiveProjection();
 		
 	glutSwapBuffers();
 }

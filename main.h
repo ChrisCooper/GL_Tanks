@@ -12,8 +12,8 @@
 #include "Tank.h"
 #include "Obstacle.h"
 
-#ifndef _MAIN.H
-#define _MAIN.H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 void handleKeypress(unsigned char key, int x, int y);
 void handleSpecialKeypress(int key, int x, int y);

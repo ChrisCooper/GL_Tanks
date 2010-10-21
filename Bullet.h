@@ -9,8 +9,8 @@
 
 #include "Definitions.h"
 
-#ifndef _BULLET.H
-#define _BULLET.H
+#ifndef _BULLET_H
+#define _BULLET_H
 
 class Bullet {
 public:

@@ -8,8 +8,8 @@
 
 #include "Definitions.h"
 
-#ifndef _OBSTACLE.H
-#define _OBSTACLE.H
+#ifndef _OBSTACLE_H
+#define _OBSTACLE_H
 
 class Obstacle {
 public:

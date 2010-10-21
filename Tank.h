@@ -9,8 +9,8 @@
 #include "Definitions.h"
 #include "Bullet.h"
 
-#ifndef _TANK.H
-#define _TANK.H
+#ifndef _TANK_H
+#define _TANK_H
 
 class Tank {
 	public:

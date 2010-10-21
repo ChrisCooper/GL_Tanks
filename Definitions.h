@@ -6,8 +6,8 @@
  *
  */
 
-#ifndef _DEFINITIONS.H 
-#define _DEFINITIONS.H
+#ifndef _DEFINITIONS_H 
+#define _DEFINITIONS_H
 
 
 	#define PI 3.141592654
