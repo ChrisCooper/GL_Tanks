@@ -3,7 +3,7 @@
 
 Controls
 --------
-* WASD: Move and rotate take body
+* WASD: Move and rotate tank body
 * JL: Rotate turret
 * Spacebar: Fire turret gun
 * I: Speed boost (you loose some maneuverability while boosting)
