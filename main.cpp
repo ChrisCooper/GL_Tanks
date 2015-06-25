@@ -113,10 +113,10 @@ void update(int value){
 	
 	bool bulletNotDead = true;
 	
-	for (int i = 0; i < bullets.size(); i++){
+	for (uint i = 0; i < bullets.size(); i++){
 		bullets[i]->move();
 		bulletNotDead = true;
-		for (int j = 0; j < tanks.size() && bulletNotDead; j++) {
+		for (uint j = 0; j < tanks.size() && bulletNotDead; j++) {
 			if (tanks[j]->isHitBy(bullets[i])){
 				tanks[j]->damage(1);
 				bullets[i]->flagAsDead();
@@ -135,7 +135,7 @@ void update(int value){
 		}
 	}
 	
-	for (int i = 0; i < bullets.size(); i++){
+	for (uint i = 0; i < bullets.size(); i++){
 		if (bullets[i]->isDead()){
 			delete bullets[i];
 			bullets.erase(bullets.begin()+i);
@@ -144,14 +144,14 @@ void update(int value){
 	
 	slowMotionCounter++;
 	if (slowMotionCounter >= slowMotionMagnitude){
-		for (int i = 0; i < tanks.size(); i++) {
+		for (uint i = 0; i < tanks.size(); i++) {
 			tanks[i]->move();
 			tanks[i]->runAI();
 			slowMotionCounter = 0;
 		}
 	}
 	
-	for (int i = 0; i < tanks.size(); i++) {
+	for (uint i = 0; i < tanks.size(); i++) {
 		if (tanks[i]->isDead()){
 			delete tanks[i];
 			tanks.erase(tanks.begin()+i);
@@ -257,13 +257,13 @@ void drawScene() {
 
 		
 		makeReferenceCubes(1.5f, 0.1f);
-		for (int i = 0; i < bullets.size(); i++){
+		for (uint i = 0; i < bullets.size(); i++){
 			bullets[i]->drawSelf();
 		}
-		for (int i = 0; i < tanks.size(); i++){
+		for (uint i = 0; i < tanks.size(); i++){
 			tanks[i]->drawSelf();
 		}
-		for (int i = 0; i < obstacles.size(); i++){
+		for (uint i = 0; i < obstacles.size(); i++){
 			obstacles[i]->drawSelf();
 		}
 		makeGrid(mapSize);

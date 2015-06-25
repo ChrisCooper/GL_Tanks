@@ -40,7 +40,7 @@ void Bullet::move(){
 		this->remainingLife--;
 	}
 	this->remainingLife -= 1;
-	for (int i = 0; i < obstacles.size(); i++) {
+	for (uint i = 0; i < obstacles.size(); i++) {
 		if (distanceBetween(this->posX, this->posZ, obstacles[i]->givePosX(), obstacles[i]->givePosZ()) < obstacles[i]->giveRadius()){
 			this->flagAsDead();
 		}

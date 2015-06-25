@@ -366,12 +366,12 @@ bool Tank::canMoveTo(float newX, float newZ){
 	if (newX > mapSize - 1.0f || newX < -mapSize + 1.0f || newZ > mapSize - 1.0f || newZ < -mapSize + 1.0f){
 		return false;
 	}
-	for (int i = 0; i < tanks.size(); i++) {
+	for (uint i = 0; i < tanks.size(); i++) {
 		if (this != tanks[i] && distanceBetween(newX, newZ, tanks[i]->posX, tanks[i]->posZ) < 1.5f){
 			return false;
 		}
 	}
-	for (int i = 0; i < obstacles.size(); i++) {
+	for (uint i = 0; i < obstacles.size(); i++) {
 		if (distanceBetween(newX, newZ, obstacles[i]->givePosX(), obstacles[i]->givePosZ()) < obstacles[i]->giveRadius() + 0.5f){
 			return false;
 		}
